@@ -1,0 +1,201 @@
+   * {
+       box-sizing: border-box !important;
+   }
+
+   .nav a:hover,
+   .nav li:hover {
+       background-color: #e7ab3c !important;
+       /* color: white !important; */
+   }
+
+   /* pics of fasi hover effect */
+
+   .img-insta:hover .img-insta-content {
+       display: flex !important;
+   }
+
+   .banner:hover .banner-content {
+       width: 10px;
+       background-color: transparent !important;
+       opacity: 0.3;
+       border: 1px solid rgb(255, 255, 255) !important;
+       transform: scale(25, 5) !important;
+   }
+
+   /* .dropdown:hover */
+
+   #pages:hover+.dropdown,
+   #pages2:hover+.dropdown,
+   #pages+.dropdown:hover,
+   #pages2+.dropdown:hover,
+   #collections:hover+.dropdown {
+       /* z-index: 30; */
+       top: 100% !important;
+       right: 15% !important;
+       display: block !important;
+       background-color: black;
+       color: white;
+   }
+
+   #collections:hover+.dropdown,
+   #collections+.dropdown:hover {
+       z-index: 30;
+       top: 100% !important;
+       right: 35% !important;
+       display: block !important;
+       background-color: black;
+       color: white;
+   }
+
+   /* shoping menu card hover effect */
+
+   #shoping-icon:hover+.shop-card,
+   .shop-card:hover {
+       display: block !important;
+   }
+
+   /* banner section animation */
+
+   @keyframes moveup {
+       0% {
+           top: 180px;
+       }
+
+       25% {
+           top: 100px;
+       }
+
+       50% {
+           top: 50px;
+       }
+
+       100% {
+           top: 5px;
+       }
+   }
+
+   @keyframes moveuph1 {
+       0% {
+           top: 180px;
+       }
+
+       25% {
+           top: 100px;
+       }
+
+       50% {
+           top: 50px;
+       }
+
+       100% {
+           top: 25px;
+       }
+   }
+
+   @keyframes moveupP {
+       0% {
+           top: 180px;
+       }
+
+       25% {
+           top: 130px;
+       }
+
+       50% {
+           top: 105px;
+       }
+
+       100% {
+           top: 85px;
+       }
+   }
+
+   @keyframes moveupDiv {
+       0% {
+           top: 180px;
+       }
+
+       25% {
+           top: 150px;
+       }
+
+       50% {
+           top: 120px;
+       }
+
+       100% {
+           top: 100px;
+       }
+   }
+
+   #animate>* {
+       display: none;
+       position: absolute;
+       top: 200%;
+   }
+
+   #animate>span {
+       display: block;
+       animation: moveup 1s linear 1;
+       animation-fill-mode: forwards;
+       animation-delay: 0.1s;
+       transition: top 3s ease-in;
+       /* top: 0%; */
+   }
+
+   #animate>h1 {
+       display: block;
+       animation: moveuph1 2s linear 1;
+       animation-delay: 0.3s;
+       animation-fill-mode: forwards;
+       transition: top 3s ease-in;
+       /* top: 20%; */
+   }
+
+   #animate>p {
+       display: block;
+       width: 50%;
+       animation: moveupP 3s linear 1;
+       animation-fill-mode: forwards;
+       animation-delay: 0.5s;
+       transition: top 3s ease-in;
+       /* top: 40%; */
+   }
+
+   #animate>div {
+       display: block;
+       animation: moveupDiv 3.5s linear;
+       animation-fill-mode: forwards;
+       animation-delay: 1s;
+       transition: top 3s linear;
+       /* top: 60%; */
+   }
+
+   #rotate1 {
+       transform: rotate(65deg);
+       animation: rotatedeg 2s linear 0.5s forwards;
+   }
+
+   @keyframes rotatedeg {
+       0% {
+           transform: rotate(90deg);
+       }
+
+       100% {
+           transform: rotate(0deg);
+       }
+   }
+
+   /* for products hover effects */
+
+   .product-item:hover #heart-icon {
+       display: block !important;
+       width: 100% !important;
+       top: 10px !important;
+       left: 60% !important;
+   }
+
+   .product-item:hover #bag-icons {
+       display: block !important;
+       bottom: 5% !important;
+   }
